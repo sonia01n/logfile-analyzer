@@ -1,4 +1,4 @@
-# Log File Analyzer 🧠
+# Log File Analyzer 
 
 A Python-based log file analyzer that parses large server logs using regex,
 identifies frequent error patterns, and detects peak error time windows.
