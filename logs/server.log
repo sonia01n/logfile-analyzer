@@ -1,0 +1,30 @@
+2025-12-29 21:10:05 INFO  [Server] Starting server on port 8080...
+2025-12-29 21:10:05 INFO  [Database] Connecting to database 'movies_db' at localhost:5432
+2025-12-29 21:10:06 INFO  [Database] Connection established successfully
+2025-12-29 21:10:06 INFO  [Server] Server started successfully
+
+2025-12-29 21:12:18 INFO  [HTTP] GET /api/movies 200 OK 120ms
+2025-12-29 21:12:18 INFO  [HTTP] Request from 192.168.1.5, User-Agent: Mozilla/5.0
+2025-12-29 21:12:22 WARN  [Auth] Invalid token provided for user 'guest'
+2025-12-29 21:12:23 INFO  [HTTP] POST /api/login 401 Unauthorized 15ms
+
+2025-12-29 21:12:30 INFO  [HTTP] GET /api/movies/123 200 OK 90ms
+2025-12-29 21:12:30 INFO  [Cache] Cache miss for movie id 123, fetching from database
+2025-12-29 21:12:30 INFO  [Cache] Cache updated for movie id 123
+
+2025-12-29 21:13:01 ERROR [Database] Query failed: SELECT * FROM users WHERE id=999
+2025-12-29 21:13:01 ERROR [Database] Error details: No such record found
+
+2025-12-29 21:14:45 INFO  [HTTP] GET /api/movies?genre=action 200 OK 135ms
+2025-12-29 21:14:45 INFO  [HTTP] Request from 192.168.1.7, User-Agent: curl/7.64.1
+
+2025-12-29 21:15:12 WARN  [Server] High memory usage detected: 1.2GB used
+2025-12-29 21:15:15 INFO  [Server] Performing cleanup of unused sessions
+2025-12-29 21:15:16 INFO  [Server] Cleanup complete, 42 sessions removed
+
+2025-12-29 21:16:02 INFO  [HTTP] GET /api/users/456 404 Not Found 50ms
+2025-12-29 21:16:02 WARN  [HTTP] Attempted access to non-existent resource /api/users/456
+
+2025-12-29 21:18:22 INFO  [Server] Shutting down server gracefully...
+2025-12-29 21:18:22 INFO  [Database] Closing database connection
+2025-12-29 21:18:23 INFO  [Server] Server stopped successfully

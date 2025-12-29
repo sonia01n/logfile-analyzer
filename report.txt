@@ -1,0 +1,11 @@
+LOG FILE ANALYSIS REPORT
+=========================
+
+Top Error Messages
+------------------
+[Database] Query failed: SELECT * FROM users WHERE id=999 -> 1
+[Database] Error details: No such record found -> 1
+
+Errors by Hour
+--------------
+21:00 - 2 errors
